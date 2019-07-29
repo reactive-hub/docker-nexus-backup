@@ -25,6 +25,8 @@ ENV TARGET_BUCKET "gs://nexus-backup"
 # The amount of time in seconds to wait between stopping repositories and starting the upload.
 ENV GRACE_PERIOD "60"
 
+ENV NEXUS_CONTEXT "/nexus"
+
 WORKDIR /tmp
 
 RUN apk add --no-cache --update bash ca-certificates curl inotify-tools python openssl \
